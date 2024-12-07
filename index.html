@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <p>Homunculus</p>
+    <header class="header">
+        <nav class="nav container">
+            <p class="logo">Homunculus</p>
             <ul>
                 <li><a href="#">Synopsis</a></li>
                 <li><a href="#">Characters</a></li>
@@ -18,52 +22,60 @@
     </header>
     <main>
         <section class="hero">
-            <div class="hero__introduction">
-                <h1 class="primary-heading">About Homunculus</h1>
-                <p>Focusing on visual distortion, Homunculus delves into the complexity of human relationships and the deepest emotions.</p>
-                <button class="button">Sign up</button>
+            <div class="hero__introduction container">
+                <div class="introduction">
+                    <h1 class="primary-heading">About the manga<br>Homunculus</h1>
+                    <p>Focusing on visual distortion, Homunculus delves into the complexity of human relationships and the deepest emotions.</p>
+                    <button class="button">Sign up</button>
+                </div>
+                <div class="hero__image">
+                    <img class="image" src="img/banner.png" alt="Homunculus panel. Nakoshi reflecting.">
+                </div>
             </div>
-            <div class="hero__image"><img src="img/banner.png" alt="Homunculus panel. Nakoshi reflecting."></div>
         </section><!--hero-->
 
-        <section>
+        <section class="information">
             <h2 class="secondary-heading">Some manga panels</h2>
-            <div class="container">
-                <div class="panel">
-                    <img src="img/01.png" alt="Nakoshi floating in the river.">
+            <div class="panel-container container">
+                <div class="parte">
+                    <img class="panel" src="img/01.png" alt="Nakoshi floating in the river.">
                     <p>Nakoshi floating in the river.</p>
                 </div>
-                <div class="panel">
-                    <img src="img/02.png" alt="Philosophical question.">
+                <div class="parte">
+                    <img class="panel" src="img/02.png" alt="Philosophical question.">
                     <p>What does it mean to be human?</p>
                 </div>
-                <div class="panel">
-                    <img src="img/03.png" alt="Nakoshi contemplating.">
+                <div class="parte">
+                    <img class="panel"  src="img/03.png" alt="Nakoshi contemplating.">
                     <p>Nakoshi contemplating a scene.</p>
                 </div>
-                <div class="panel">
-                    <img src="img/04.png" alt="Nakoshi throwing a gun.">
+                <div class="parte">
+                    <img class="panel" src="img/04.png" alt="Nakoshi throwing a gun.">
                     <p>Nakoshi throwing a gun.</p>
                 </div>
             </div>
-        </section>
+        </section> <!--information-->
 
-        <section>
-            <p class="quote">
-                You can't think of a machine as a machine. In today's world, people are more machine than the machines are.
-            </p>
-            <p class="author">-Nakoshi Susumu</p>
-        </section>
-
-        <section>
-            <div>
-                <p>Don't waste time!</p>
-                <p>Sign up to see all the Homunculus volumes.</p>
+        <section class="quote">
+            <div class="quote-container container">
+                <p class="quote__p">
+                    You can't think of a machine as a machine. In today's world, people are more machine than the machines are.
+                </p>
+                <p class="quote__author">-Nakoshi Susumu</p>
             </div>
-            <button class="button">Sign up</button>
-        </section>
+        </section> <!--quote-->
+
+        <section>
+            <div class="signup-container container">
+                <div class="content">
+                    <p class="title">Don't waste time!</p>
+                    <p>Sign up to see all the Homunculus volumes.</p>
+                </div>
+                <button class="button button-border">Sign up</button>
+            </div>
+        </section> 
     </main>
-    <footer>
+    <footer class="footer">
         <p>Copyright © Vdermann 2024</p>
     </footer>
 </body>
